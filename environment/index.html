@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Philippines - Discover Natural Beauty</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-mountain"></i>
+                <span>PH Explore</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#mountains" class="nav-link">Mountains</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#forests" class="nav-link">Forests</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#oceans" class="nav-link">Oceans</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#attractions" class="nav-link">Attractions</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Explore the Beauty of the Philippines</h1>
+            <p class="hero-subtitle">Discover breathtaking mountains, lush forests, and pristine oceans in the Pearl of the Orient Seas</p>
+            <a href="#mountains" class="cta-button">Discover Now</a>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Mountains Section -->
+    <section id="mountains" class="section mountains">
+        <div class="container">
+            <h2 class="section-title">Majestic Mountains</h2>
+            <p class="section-subtitle">Conquer the highest peaks of the Philippines</p>
+            <div class="mountains-grid">
+                <div class="mountain-card">
+                    <img src="images/pulag.jpg" alt="Mt. Pulag" loading="lazy">
+                    <div class="card-content">
+                        <h3>Mt. Pulag</h3>
+                        <p>Benguet's highest peak at 2,922m, known as the "Playground of the Gods"</p>
+                    </div>
+                </div>
+                <div class="mountain-card">
+                    <img src="images/apo.png" alt="Mt. Apo" loading="lazy">
+                    <div class="card-content">
+                        <h3>Mt. Apo</h3>
+                        <p>Philippines' highest mountain at 2,956m, home to the Philippine Eagle</p>
+                    </div>
+                </div>
+                <div class="mountain-card">
+                    <img src="images/halcon.JPG" alt="Mt. Halcon" loading="lazy">
+                    <div class="card-content">
+                        <h3>Mt. Halcon</h3>
+                        <p>Challenging peak in Mindoro, known for its rugged terrain</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forests Section -->
+    <section id="forests" class="section forests">
+        <div class="container">
+            <h2 class="section-title">Lush Forests</h2>
+            <p class="section-subtitle">Immerse in ancient rainforests teeming with life</p>
+            <div class="forest-content">
+                <div class="forest-text">
+                    <h3>Tropical Rainforest Paradise</h3>
+                    <p>Experience the biodiversity of the Philippines' ancient forests. Home to rare orchids, exotic birds, and unique flora found nowhere else on Earth.</p>
+                    <ul>
+                        <li>Over 52,000 plant species</li>
+                        <li>Rich endemic wildlife</li>
+                        <li>Ancient dipterocarp forests</li>
+                    </ul>
+                </div>
+                <div class="forest-image">
+                    <img src="images/rf.jpg" alt="Philippine Rainforest" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Oceans Section -->
+    <section id="oceans" class="section oceans">
+        <div class="container">
+            <h2 class="section-title-oceans">Crystal Oceans</h2>
+            <p class="section-subtitle-oceans">Dive into paradise with world-class marine biodiversity</p>
+            <div class="ocean-slider-container">
+                <div class="ocean-slider" id="oceanSlider">
+                    <div class="slider-track" id="sliderTrack">
+                        <div class="slide">
+                            <img src="images/bora.jpg" alt="Boracay Beach">
+                            <div class="slide-overlay">
+                                <h3>Boracay White Beach</h3>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/coron.png" alt="Palawan">
+                            <div class="slide-overlay">
+                                <h3>Palawan Coron</h3>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/c9.png" alt="Siargao">
+                            <div class="slide-overlay">
+                                <h3>Siargao Cloud 9</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                    <div class="slider-dots" id="sliderDots"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attractions Section
+    <section id="attractions" class="section attractions">
+        <div class="container">
+            <h2 class="section-title">Iconic Destinations</h2>
+            <p class="section-subtitle">Must-visit places that define Philippine tourism</p>
+            <div class="attractions-grid">
+                <div class="attraction-card">
+                    <div class="card-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Palawan</h3>
+                    <p>Underground River and El Nido's limestone cliffs</p>
+                </div>
+                <div class="attraction-card">
+                    <div class="card-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Boracay</h3>
+                    <p>World-famous 4km white sand beach paradise</p>
+                </div>
+                <div class="attraction-card">
+                    <div class="card-icon">
+                        <i class="fas fa-mountain-sun"></i>
+                    </div>
+                    <h3>Banaue Rice Terraces</h3>
+                    <p>8th Wonder of the World carved by Ifugao ancestors</p>
+                </div>
+                <div class="attraction-card">
+                    <div class="card-icon">
+                        <i class="fas fa-volcano"></i>
+                    </div>
+                    <h3>Mayon Volcano</h3>
+                    <p>Perfectly cone-shaped active volcano of Bicol</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-mountain"></i>
+                        <span>PH Explore</span>
+                    </div>
+                    <p>Discover the natural wonders of the Philippines</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#mountains">Mountains</a></li>
+                        <li><a href="#oceans">Oceans</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
